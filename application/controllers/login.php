@@ -2,26 +2,34 @@
 
 class Login extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -  
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
+	public function __construct() {
+        parent::__construct();
+        $this->load->library(array('session'));
+        $this->load->helper(array('url','form'));
+        $this->load->database('default');
+    }
+
 	public function index()
 	{
 		$this->load->view('login');
 	}
-}
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+	public function validate_user() {
+		$this->load->model('user_model');	
+		$email = $this->input->post('email');
+		$password = $this->input->post('password');
+		//creo el nuevo usuario
+		$response = $this->user_model->login_user($email, $password);
+		var_dump($response);
+		if($response == TRUE) {
+			$data = array(
+	            'is_logued_in' 	=> 		TRUE,
+	            'id'			=>		$response->id,
+	            'name' 			=> 		$response->name,
+	            'perfil' 		=> 		'usuario'
+    		);		
+			$this->session->set_userdata($data);
+		}
+		redirect('main/index');
+	}
+}
