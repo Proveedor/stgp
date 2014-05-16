@@ -4,14 +4,11 @@ class Login extends CI_Controller {
 
 	public function __construct() {
         parent::__construct();
-        $this->load->library(array('session'));
-        $this->load->helper(array('url','form'));
-        $this->load->database('default');
     }
 
 	public function index()
 	{
-		$this->load->view('login');
+		$this->load->view('login',TRUE);
 	}
 
 	public function validate_user() {
@@ -29,7 +26,10 @@ class Login extends CI_Controller {
 	            'perfil' 		=> 		'usuario'
     		);		
 			$this->session->set_userdata($data);
+			redirect('main/index');
+		} else {
+
 		}
-		redirect('main/index');
+
 	}
 }

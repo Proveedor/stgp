@@ -4,8 +4,6 @@ class Main extends CI_Controller {
 
 	public function __construct() {
         parent::__construct();
-
-        $this->load->library(array('session'));
     }
 
 	public function index()
@@ -15,7 +13,8 @@ class Main extends CI_Controller {
 		if($data['is_logued_in'] == TRUE) {
 			$data['name'] = $this->session->userdata('name');
 		}
-		$this->load->view('main_index' , $data);
+		$this->template->set('login' , $this->load->view('login', $data , TRUE) );
+		$this->template->load('template', 'main_index', $data);
 	}
 
 }

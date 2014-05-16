@@ -4,11 +4,8 @@ class Register extends CI_Controller {
 
 	public function __construct() {
         parent::__construct();
-
-        $this->load->helper(array('url','form'));
         //Cargo la libreria de validacion de formulario
 		$this->load->library('form_validation');
-		$this->load->database('default');
     }
 
 	public function index()
@@ -41,9 +38,10 @@ class Register extends CI_Controller {
 			//Acción a tomas si no existe ningun error
 			$result = $this->create_user($email, $password,$name,$city,$country);
 			if($result){
-				$this->load->view('register_error' , array('result' => $result));
-			} else {
 				$this->load->view('register_success' , array('result' => $result));
+				
+			} else {
+				$this->load->view('register_error' , array('result' => $result));
 			}
 		}
 
