@@ -1,0 +1,403 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"create_",
+				"create_user"
+			],
+			[
+				"co",
+				"country"
+			],
+			[
+				"p",
+				"php"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/views/template.php",
+			"settings":
+			{
+				"buffer_size": 926,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/css/default_layout.css",
+			"settings":
+			{
+				"buffer_size": 2251,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/controllers/main.php",
+			"settings":
+			{
+				"buffer_size": 534,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/controllers/login.php",
+			"settings":
+			{
+				"buffer_size": 829,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/login.php",
+			"settings":
+			{
+				"buffer_size": 1251,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/login.css",
+			"settings":
+			{
+				"buffer_size": 109,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/stgp/application/config/routes.php",
+		"/C/xampp/htdocs/stgp/application/config/config.php",
+		"/C/xampp/htdocs/stgp/application/views/register_form.php",
+		"/C/xampp/htdocs/stgp/application/views/login.php",
+		"/C/xampp/htdocs/stgp/application/views/main_index.php",
+		"/C/xampp/htdocs/stgp/application/controllers/login.php",
+		"/C/xampp/htdocs/stgp/application/views/index.html",
+		"/C/xampp/htdocs/stgp/application/views/register_success.php",
+		"/C/xampp/htdocs/stgp/application/views/register_error.php",
+		"/C/xampp/htdocs/stgp/application/controllers/main.php",
+		"/C/xampp/htdocs/stgp/application/models/user_model.php",
+		"/C/xampp/htdocs/stgp/application/controllers/register.php",
+		"/C/xampp/htdocs/stgp/application/views/template.php",
+		"/C/xampp/htdocs/stgp/application/config/autoload.php",
+		"/C/xampp/htdocs/stgp/application/views/form_success.php",
+		"/C/xampp/htdocs/stgp/assets/css/default_layout.css",
+		"/C/xampp/htdocs/stgp/assets/css/jquery-ui-1.10.4.css",
+		"/C/xampp/htdocs/stgp/application/models/index.html",
+		"/C/xampp/htdocs/stgp/application/config/database.php",
+		"/C/xampp/htdocs/casba/application/controllers/login.php",
+		"/C/xampp/htdocs/casba/application/controllers/index.html",
+		"/C/xampp/htdocs/casba/application/.htaccess"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"'",
+			"assets",
+			"true",
+			"}\n",
+			"true",
+			"assets",
+			"script",
+			"head",
+			">\n",
+			"image",
+			"imges",
+			"Funciono",
+			"create_user",
+			"<?=",
+			"default_controller",
+			"welco",
+			"welcome"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<?php echo "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/views/template.php",
+					"settings":
+					{
+						"buffer_size": 926,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								198,
+								274
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 14.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/css/default_layout.css",
+					"settings":
+					{
+						"buffer_size": 2251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2060,
+								2060
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 966.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/controllers/main.php",
+					"settings":
+					{
+						"buffer_size": 534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								454,
+								458
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/controllers/login.php",
+					"settings":
+					{
+						"buffer_size": 829,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								823,
+								823
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/views/login.php",
+					"settings":
+					{
+						"buffer_size": 1251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "assets/css/login.css",
+					"settings":
+					{
+						"buffer_size": 109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								104
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 277.0,
+	"status_bar_visible": true
+}

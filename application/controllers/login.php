@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+require_once APPPATH.'controllers/TcgTrade.php';
+
+class Login extends TcgTrade_Controller {
 
 	public function __construct() {
         parent::__construct();
@@ -15,9 +17,7 @@ class Login extends CI_Controller {
 		$this->load->model('user_model');	
 		$email = $this->input->post('email');
 		$password = $this->input->post('password');
-		//creo el nuevo usuario
 		$response = $this->user_model->login_user($email, $password);
-		var_dump($response);
 		if($response == TRUE) {
 			$data = array(
 	            'is_logued_in' 	=> 		TRUE,
@@ -26,9 +26,9 @@ class Login extends CI_Controller {
 	            'perfil' 		=> 		'usuario'
     		);		
 			$this->session->set_userdata($data);
-			redirect('main/index');
+			echo json_encode(array('result' => true ));
 		} else {
-
+			echo json_encode(array('result' => false, 'message' => 'Usuario o contraseña invalidos' ));
 		}
 
 	}

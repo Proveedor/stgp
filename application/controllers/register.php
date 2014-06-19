@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Register extends CI_Controller {
+require_once APPPATH.'controllers/TcgTrade.php';
+
+class Register extends TcgTrade_Controller {
 
 	public function __construct() {
         parent::__construct();
@@ -33,15 +35,15 @@ class Register extends CI_Controller {
 				'v_city' => $city,
 				'v_country' => $country
 			);
-			$this->load->view('register_form',$data);
+			$this->template->load('template', 'register_form', $data);
 		} else {
 			//Acción a tomas si no existe ningun error
 			$result = $this->create_user($email, $password,$name,$city,$country);
+			$this->_data['result'] = $result;
 			if($result){
-				$this->load->view('register_success' , array('result' => $result));
-				
+				$this->template->load('template', 'register_success', $this->_data);
 			} else {
-				$this->load->view('register_error' , array('result' => $result));
+				$this->template->load('template', 'register_error', $this->_data);
 			}
 		}
 

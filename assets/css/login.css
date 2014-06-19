@@ -1,0 +1,22 @@
+.form_login {
+	padding-top: 2px;
+	padding-right: 2px;
+}
+
+.input-login {
+	padding-right: 2px;
+}
+
+.img-login {
+	height: 20px;
+	padding-top: 5px;
+}
+
+#register {
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+.login {
+	width: 200px;
+}
