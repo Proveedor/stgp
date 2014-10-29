@@ -1,26 +1,23 @@
-<ul>
+<ul class="nav nav-pills nav-stacked" id="menu">
 	<li>
-		Inicio
+		<?php echo anchor('#', 'Inicio') ?>
 	</li>
 	<li>
-		Navegar
+		<?php echo anchor('#', 'Navegar') ?>
 	</li>
 	<li>
-		<div id="register" class="pull-left"><?php echo anchor('main/my_cards', 'Mis Cartas') ?></div>
+		<?php echo anchor('main/my_cards', 'Mis Cartas') ?>
 	</li>
 	<li>
-		Mis Ventas
+		<?php echo anchor('#', 'Mensajes') ?>
 	</li>
 	<li>
-		Mensajes
+		<?php echo anchor('#', 'Buscador Avanzado') ?>
 	</li>
 	<li>
-		Buscador Avanzado
+		<?php echo anchor('#', 'Perfil') ?>
 	</li>
 	<li>
-		Perfil
-	</li>
-	<li>
-		Salir
+		<?php echo anchor('login/logout', 'Salir') ?>
 	</li>
 </ul>

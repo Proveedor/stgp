@@ -32,4 +32,9 @@ class Login extends TcgTrade_Controller {
 		}
 
 	}
+
+	public function logout(){
+		$this->session->sess_destroy();
+		redirect('#','refresh');
+	}
 }

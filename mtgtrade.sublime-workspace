@@ -4,8 +4,76 @@
 		"selected_items":
 		[
 			[
-				"padding",
+				"car",
+				"card_list"
+			],
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"f",
+				"files"
+			],
+			[
+				"cont",
+				"contCard"
+			],
+			[
+				"str_",
+				"str_replace"
+			],
+			[
+				"utf",
+				"utf8_decode"
+			],
+			[
+				"ca",
+				"card_info"
+			],
+			[
+				"is",
+				"isset"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"utf8",
+				"utf8_encode"
+			],
+			[
+				"is_",
+				"is_bool"
+			],
+			[
+				"isnu",
+				"is_numeric"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"pad",
 				"padding-top"
+			],
+			[
+				"array",
+				"array"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"padding",
+				"padding-left"
 			],
 			[
 				"create_",
@@ -28,26 +96,10 @@
 	"buffers":
 	[
 		{
-			"file": "application/views/template.php",
-			"settings":
-			{
-				"buffer_size": 926,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/css/default_layout.css",
-			"settings":
-			{
-				"buffer_size": 2251,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "application/controllers/main.php",
 			"settings":
 			{
-				"buffer_size": 534,
+				"buffer_size": 652,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,23 +107,51 @@
 			"file": "application/controllers/login.php",
 			"settings":
 			{
-				"buffer_size": 829,
+				"buffer_size": 1042,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "application/views/login.php",
+			"contents": "<link href=\"<?php echo base_url() ?>assets/css/my_card_list.css\" rel=\"stylesheet\" type=\"text/css\"/>\n<link href=\"<?php echo base_url() ?>assets/css/tooltip_image.css\" rel=\"stylesheet\" type=\"text/css\"/>\n<script src=\"<?php echo base_url() ?>assets/js/tooltip_image.js\"></script>\n<!-- Nav tabs -->\n<ul class=\"nav nav-tabs\" role=\"tablist\">\n  <li class=\"active\"><a href=\"#mycards\" role=\"tab\" data-toggle=\"tab\">Mis Cartas</a></li>\n  <li><a href=\"#publications\" role=\"tab\" data-toggle=\"tab\">Publicaciones</a></li>\n</ul>\n<!-- Tab panes -->\n<div class=\"tab-content\">\n	<div class=\"tab-pane active\" id=\"mycards\">\n		<div class=\"panel panel-default\">\n			<?php   \n				$busqueda = array('name' => 'busqueda', 'placeholder' => 'Agregar', 'class' => 'form-control');\n				$submit = array('name' => 'submit', 'value' => 'Enviar', 'title' => 'Enviar', 'class' => 'btn btn-default');\n				echo form_open('#');\n			?>	\n			<div id=\"add_card\" class=\"input-group\">\n				<span class=\"input-group-btn\">\n			        <?php echo form_submit($submit)?>\n		      	</span>\n	            <?php echo form_input($busqueda)?>\n			</div>\n            <?php echo form_close()?>\n			<div class=\"row\">  \n			<div class=\"panel-heading\">Mis Cartas</div>\n			<table class=\"table\">\n			<tr>\n				<th>Imagen</th>\n				<th>Nombre</th>\n				<th>Edicion</th>\n				<th>Cantidad</th>\n			</tr>\n			<?php if(count($card_list)):\n				foreach($card_list as $array):?>\n					<tr>\n						<td>\n							<div id='image'>\n								<?php echo get_mtg_img($array['multiverseid'],'my_card_list_img preview'); ?>\n							</div>\n						</td>\n						<td><?php echo $array['namecard']; ?></td>\n						<td><?php echo $array['name']; ?></td>\n						<td><?php echo $array['quantity']; ?></td>\n					</tr>\n				<?php endforeach; ?>\n			<?php else:?>\n				<tr>\n					<td rowspan=4> <p>No hay nada para mostrar</p></td>\n				</tr>\n			<?php endif;?>\n			</table>\n		</div>\n	</div>\n<div class=\"tab-pane\" id=\"publications\">\n	<div class=\"well well-sm\"> mis publicaciones? </div>\n</div>\n</div>",
+			"file": "application/views/my_cards.php",
+			"file_size": 2736,
+			"file_write_time": 130567339666399654,
 			"settings":
 			{
-				"buffer_size": 1251,
-				"line_ending": "Unix"
+				"buffer_size": 1978,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/css/login.css",
+			"file": "application/helpers/get_img_helper.php",
 			"settings":
 			{
-				"buffer_size": 109,
+				"buffer_size": 150,
+				"line_ending": "Windows",
+				"name": "<?php"
+			}
+		},
+		{
+			"file": "assets/css/my_card_list.css",
+			"settings":
+			{
+				"buffer_size": 133,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/js/tooltip_image.js",
+			"settings":
+			{
+				"buffer_size": 1167,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/register_form.php",
+			"settings":
+			{
+				"buffer_size": 1858,
 				"line_ending": "Windows"
 			}
 		}
@@ -100,22 +180,48 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/stgp/assets/css/default_layout.css",
+		"/C/xampp/htdocs/stgp/application/controllers/TcgTrade.php",
+		"/C/xampp/htdocs/stgp/application/views/header.php",
+		"/C/xampp/htdocs/stgp/assets/css/tooltip_image.css",
+		"/C/xampp/htdocs/stgp/assets/css/card_search.css",
+		"/C/xampp/htdocs/stgp/assets/js/card_search.js",
+		"/C/xampp/htdocs/stgp/application/views/template.php",
+		"/C/xampp/htdocs/stgp/application/views/sidebar.php",
+		"/C/xampp/htdocs/stgp/application/models/cards_model.php",
+		"/C/xampp/htdocs/stgp/assets/js/tooltip_image.js",
+		"/C/xampp/htdocs/stgp/assets/css/my_card_list.css",
+		"/C/xampp/htdocs/stgp/application/controllers/login.php",
+		"/C/xampp/htdocs/stgp/application/views/main_index.php",
+		"/C/xampp/htdocs/stgp/DATABASE/loadCards.php",
+		"/C/xampp/htdocs/stgp/application/libraries/Template.php",
+		"/C/Users/lviegas/Desktop/ME3.json",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/xampp/mysql/my-default.ini",
+		"/C/xampp/htdocs/stgp/application/.htaccess",
+		"/C/xampp/htdocs/stgp/database/AllSets-x.json",
+		"/C/xampp/htdocs/stgp/loadCards.sql",
+		"/C/xampp/htdocs/stgp/AllSets-x.json",
+		"/C/xampp/htdocs/stgp/assets/css/login.css",
+		"/C/xampp/htdocs/stgp/assets/js/login.js",
+		"/C/xampp/htdocs/stgp/application/views/register_success.php",
+		"/C/xampp/htdocs/stgp/assets/css/car_search.css",
+		"/C/xampp/htdocs/stgp/application/views/login.php",
+		"/C/xampp/htdocs/stgp/application/controllers/register.php",
+		"/C/xampp/htdocs/stgp/application/views/register_form.php",
+		"/C/xampp/htdocs/stgp/system/core/Controller.php",
+		"/C/xampp/htdocs/stgp/application/views/my_cards.php",
+		"/C/xampp/htdocs/stgp/system/helpers/is_logued_in_helper.php",
+		"/C/xampp/htdocs/stgp/system/helpers/array_helper.php",
+		"/C/xampp/htdocs/stgp/system/core/Loader.php",
+		"/C/xampp/htdocs/stgp/application/views/form_success.php",
+		"/C/xampp/htdocs/stgp/application/models/user_model.php",
 		"/C/xampp/htdocs/stgp/application/config/routes.php",
 		"/C/xampp/htdocs/stgp/application/config/config.php",
-		"/C/xampp/htdocs/stgp/application/views/register_form.php",
-		"/C/xampp/htdocs/stgp/application/views/login.php",
-		"/C/xampp/htdocs/stgp/application/views/main_index.php",
-		"/C/xampp/htdocs/stgp/application/controllers/login.php",
 		"/C/xampp/htdocs/stgp/application/views/index.html",
-		"/C/xampp/htdocs/stgp/application/views/register_success.php",
 		"/C/xampp/htdocs/stgp/application/views/register_error.php",
 		"/C/xampp/htdocs/stgp/application/controllers/main.php",
-		"/C/xampp/htdocs/stgp/application/models/user_model.php",
-		"/C/xampp/htdocs/stgp/application/controllers/register.php",
-		"/C/xampp/htdocs/stgp/application/views/template.php",
 		"/C/xampp/htdocs/stgp/application/config/autoload.php",
-		"/C/xampp/htdocs/stgp/application/views/form_success.php",
-		"/C/xampp/htdocs/stgp/assets/css/default_layout.css",
 		"/C/xampp/htdocs/stgp/assets/css/jquery-ui-1.10.4.css",
 		"/C/xampp/htdocs/stgp/application/models/index.html",
 		"/C/xampp/htdocs/stgp/application/config/database.php",
@@ -132,6 +238,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"C:\\xampp\\htdocs\\stgp\\system"
 		]
 	},
 	"find_state":
@@ -139,6 +246,53 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"my_card_list_img",
+			" \n",
+			"main/my_cards",
+			"$text",
+			"$test",
+			"rulingtext",
+			"rulingtext ",
+			"rulling",
+			"$flavor",
+			"field list",
+			"commit",
+			"<br>",
+			"br",
+			"<br>",
+			"error",
+			"echo",
+			"date",
+			"originalText",
+			"originalText ",
+			"cmc",
+			"manacost",
+			"toughness",
+			"flavor",
+			"						",
+			"echo",
+			"						",
+			"loyalty",
+			"number",
+			"watermark",
+			"border",
+			"hand",
+			"imageName",
+			"life",
+			"imageName",
+			"\"\"",
+			"'",
+			"encode",
+			"UTF-8",
+			"AddDefaultCharset UTF-8",
+			"AddDefaultCharset",
+			"$card_info->colors",
+			",",
+			"CI_Controller",
+			"(); ",
+			"$data",
+			">\n",
+			" .",
 			"'",
 			"assets",
 			"true",
@@ -163,9 +317,12 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\\\"",
+			". \", \"",
+			"$this->_data",
 			"<?php echo "
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -174,23 +331,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/views/template.php",
+					"file": "application/controllers/main.php",
 					"settings":
 					{
-						"buffer_size": 926,
+						"buffer_size": 652,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								198,
-								274
+								85,
+								85
 							]
 						],
 						"settings":
@@ -199,52 +356,52 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 14.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "assets/css/default_layout.css",
+					"file": "application/controllers/login.php",
 					"settings":
 					{
-						"buffer_size": 2251,
+						"buffer_size": 1042,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2060,
-								2060
+								22,
+								22
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 966.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "application/controllers/main.php",
+					"file": "application/views/my_cards.php",
 					"settings":
 					{
-						"buffer_size": 534,
+						"buffer_size": 1978,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								454,
-								458
+								1393,
+								1393
 							]
 						],
 						"settings":
@@ -260,24 +417,24 @@
 				},
 				{
 					"buffer": 3,
-					"file": "application/controllers/login.php",
+					"file": "application/helpers/get_img_helper.php",
 					"settings":
 					{
-						"buffer_size": 829,
+						"buffer_size": 150,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								823,
-								823
+								22,
+								22
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"auto_name": "<?php",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -287,25 +444,23 @@
 				},
 				{
 					"buffer": 4,
-					"file": "application/views/login.php",
+					"file": "assets/css/my_card_list.css",
 					"settings":
 					{
-						"buffer_size": 1251,
+						"buffer_size": 133,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								111,
+								111
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -315,23 +470,53 @@
 				},
 				{
 					"buffer": 5,
-					"file": "assets/css/login.css",
+					"file": "assets/js/tooltip_image.js",
 					"settings":
 					{
-						"buffer_size": 109,
+						"buffer_size": 1167,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								104,
-								104
+								233,
+								233
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "application/views/register_form.php",
+					"settings":
+					{
+						"buffer_size": 1858,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								528,
+								606
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -398,6 +583,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 277.0,
+	"side_bar_width": 238.0,
 	"status_bar_visible": true
 }

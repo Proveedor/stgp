@@ -1,0 +1,10 @@
+.my_card_list_img{
+	height: 50px;
+ 	width: auto;
+ 	position: relative;
+}
+
+.my_card_list_img_preview{
+	height: 300px;
+ 	width: auto;
+}

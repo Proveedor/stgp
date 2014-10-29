@@ -88,6 +88,7 @@ body {
 	width: 100%;
 	float: left;
 	overflow: hidden;
+	min-height: 700px;
 }
 .content {
 	padding: 0 0 0 270px;
@@ -101,7 +102,7 @@ body {
 	width: 250px;
 	margin-left: -100%;
 	position: relative;
-	background: #B5E3FF;
+	/*background: #B5E3FF;*/
 }
 
 
